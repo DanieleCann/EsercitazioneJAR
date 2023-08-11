@@ -1,5 +1,6 @@
 package it.daniele;
 
+import it.daniele.csv.BatteriaCSV;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +12,8 @@ public class EsercitazioneJarMain {
         logger.warn("le seguenti saranno una prova di log");
         logger.debug("questo è un esempio di messaggio in debug");
         logger.error("questo è un esempio di errore");
-
+        BatteriaCSV batteriaCSV = new BatteriaCSV();
+        batteriaCSV.leggiCSV();
+        batteriaCSV.scriviCSV();
     }
 }
